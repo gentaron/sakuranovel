@@ -1,0 +1,81 @@
+:root {
+  --font-body: 'Noto Serif JP', 'Merriweather', serif;
+  --font-ui: 'Inter', sans-serif;
+  --color-bg: #1a1a1a;
+  --color-text: #e0e0e0;
+  --color-accent: #ff7eb3; /* Sakura pink */
+  --color-accent-dim: #b05a7a;
+  --color-surface: #2a2a2a;
+  --color-surface-hover: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: #fff;
+}
+
+button {
+  font-family: var(--font-ui);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dim);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  background: var(--color-accent);
+  color: #1a1a1a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #ff9ec6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 126, 179, 0.3);
+}
+
+.card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  background: var(--color-surface-hover);
+}
